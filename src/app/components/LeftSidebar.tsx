@@ -31,11 +31,11 @@ const NAVIGATION_ITEMS = [
 
 const LeftSidebar = () => {
   return (
-    <section className="w-[23%] sticky top-0 xl:flex flex-col items-stretch h-screen hidden">
+    <section className="w-[275px] sticky top-0 xl:flex flex-col items-stretch h-screen hidden">
     <div className="flex flex-col items-stretch h-full space-y-4 mt-4">
       {NAVIGATION_ITEMS.map((item) => (
         <Link
-          className="hover:bg-white/10 text-2xl transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl py-2 px-6"
+          className="hover:bg-white/10 text-xl transition duration-200 flex items-center justify-start w-fit space-x-4 rounded-3xl py-2 px-6"
           href={
             '/'
           }
@@ -47,7 +47,7 @@ const LeftSidebar = () => {
           {item.title !== "Twitter" && <div>{item.title}</div>}
         </Link>
       ))}
-      <button className="rounded-full m-4 bg-primary p-4 text-2xl text-center hover:bg-opacity-70 transition duration-200">
+      <button className="rounded-full m-4 bg-primary p-2 text-lg text-center hover:bg-opacity-70 transition duration-200">
         Tweet
       </button>
     </div>
