@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const MainComponent = () => {
   return (
-    <main className="ml-[50px]   felx w-[700px] h-full min-h-screen flex-col border-l-[0.5px] border-r border-gray-600 ">
+    <main className="   felx w-[60%] max-w-[700px]  h-full min-h-screen flex-col border-l-[0.5px] border-r border-gray-600 ">
           <h1 className="text-xl font-bold p-6 backdrop-blur bg-black/10  sticky top-0  ">
             Home
           </h1>
@@ -46,7 +46,7 @@ const MainComponent = () => {
             {Array.from({ length: 5 }).map((_, i) => (
               <div
                 key={i}
-                className="border-b-[0.5px]  border-gray-600 p-4  felx space-x-4 flex  "
+                className="border-b-[0.5px]  border-gray-600 p-4  flex  flex-col  "
               >
                 <div>
                   <div className="w-10 h-10 bg-slate-200 rounded-full" />
